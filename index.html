@@ -27,9 +27,9 @@
     <style>
         .client-logo-imgs {
             display: flex;
-            flex-direction: column;
             align-items: flex-start;
-            justify-content: center;
+            justify-content: left;
+            flex-wrap: wrap;
         }
 
         .client-logo-imgs div {
@@ -37,8 +37,8 @@
         }
 
         .client-logo-imgs img {
-            width: 180px;
-            height: 60px;
+            width: 200px;
+            height: 70px;
             object-fit: contain;
             filter: grayscale(1);
             transition: all 0.6s ease;
@@ -98,7 +98,7 @@
         }
         
         .featured-projects-content-inner .card {
-            border-right: 4px solid;
+            border-bottom: 4px solid;
         }
         
         .featured-projects-content-inner .card {
@@ -140,6 +140,7 @@
         .hackthebox-badge > div {
             width: 245px!important;
             height: 56px!important;
+            margin: 5px;
         }
 
     </style>
@@ -174,6 +175,7 @@
                                         I am a Security Engineer, who loves to explore Softwares from different angles (Security, Frontend, Backend), I keep on improving my skills by reading, researching and developing (small projects), i try to learn the concepts in a way that i can EXPLAIN it to others. This helps me to increase my Knowledge & Experience.
                                     </p>
                                     <p>
+                                        
                                         <span class="d-badge d-b-b-4">#Troubleshooter</span>
                                         <span class="d-badge d-b-b-4">#Application Secuiry Engineer</span>
                                         <span class="d-badge d-b-b-4">#Teacher</span>
@@ -198,16 +200,16 @@
                 
                 <div class="skills-overview-inner" style="padding: 40px 0px;">
                     
-                    <div class="card-body">
+                    <div class="card-body-0">
                         <h1 class="card-title" style="padding-bottom: 10px;">
-                            <span style="border-right: 4px solid; padding: 5px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; border-radius: 4px; ">Skills Overview</span>                            
+                            <span style="border-bottom: 4px solid; padding: 5px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; border-radius: 4px; ">Skills Overview</span>                            
                         </h1>
                         
                         <p class="card-text">
                             My Skills includes Security Testing, Backend & Frontend, I try exploring softwares and understand how they are created as this helps me keep on thinking and understanding new approaches and learn it by exploring my way. I do not call myself a expert in Frontend or backend Domain, But i am aware about Technologies used, how they work, where they are used, why are they so popular and should be able to work with it.<br />
                             My Most Important Skill is to understand and troubleshoot problems.
                         </p>
-                        <div class="d-flex justify-content-left align-items-center">
+                        <div class="d-flex justify-content-left align-items-center flex-wrap">
                             <div class="tryhackme-badge">
                                 <script src="https://tryhackme.com/badge/433978"></script>
                             </div>
@@ -272,9 +274,9 @@
                             <div class="card h-100">
                                 <img src="imgs/svg/frontend.svg" class="card-img-top" alt="Frontend" width=80 height=80 style="object-fit: contain; margin: 8px; margin-top-no: -40px">
                                 <div class="card-body">
-                                    <h4 class="card-title">Web Dev</h4>
+                                    <h4 class="card-title">Developement</h4>
                                     <h6 class="card-subtitle mb-2 text-muted"> 
-                                        <span class="badge bg-white text-dark" style="border: 1px solid; border-left: 6px solid black">Fronend + Backend</span> 
+                                        <span class="badge bg-white text-dark" style="border: 1px solid; border-left: 6px solid black">Frontend + Backend</span> 
                                     </h6>
                                     <p class="card-text">
                                         I keep Exploring things from both Frontend & Backend, to understand how the Application works, how it retrieves resources, which framework or library was used to develop it.
@@ -287,13 +289,14 @@
                                     
                                 </div>
                                 <ul class="list-group list-group-flush">
+                                    
+                                    <li class="list-group-item"><span class="badge bg-secondary">Python</span> <span class="badge bg-secondary">Bash</span> <span class="badge bg-secondary">NodeJS</span> <span class="badge bg-secondary">Java</span></li>
+                                    <li class="list-group-item"><span class="badge bg-secondary">Linux</span></li>
                                     <li class="list-group-item">
                                         <span class="badge bg-secondary">HTML</span> 
                                         <span class="badge bg-secondary">CSS</span> 
                                         <span class="badge bg-secondary">JS</span>
                                     </li>
-                                    <li class="list-group-item"><span class="badge bg-secondary">Python</span> <span class="badge bg-secondary">Bash</span> <span class="badge bg-secondary">NodeJS</span> <span class="badge bg-secondary">Java</span></li>
-                                    <li class="list-group-item"><span class="badge bg-secondary">Linux</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -352,13 +355,12 @@
                 
                 <div class="skills-overview-inner" style="padding: 40px 0px;">
                     
-                    <div class="card-body">
+                    <div class="card-body-0">
                         <h1 class="card-title" style="padding-bottom: 10px;">
-                            <span style="border-right: 4px solid; padding: 5px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; border-radius: 4px; ">Awards & Laurels Overview</span>                            
+                            <span style="border-bottom: 4px solid; padding: 5px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; border-radius: 4px; ">Awards & Laurels Overview</span>                            
                         </h1>
-                        
                         <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla vitae natus, sequi magni quos ea vero repudiandae similique repellat? Fugiat beatae sunt optio quas eius at obcaecati commodi in?
+                            I always try to explore something new, try to learn concepts from a different angle & perspective. Online Learning like TryHackMe, HackTheBox, PicoCTF, OffSec-Playground etc and other such learning platform help me learn.
                         </p>
                         <a href="./resume.html" class="btn btn-outline-secondary" title="Go Check Out My Resume">Read More About Me</a>
                         <a href="https://github.com/Asharry97" target="_blank" class="btn btn-secondary" title="For More Explore My GitHub">Explore</a>
@@ -382,61 +384,28 @@
                         <div class="col">
                             <div class="card h-100">
                                 <img src="imgs/certs/TryHackMe/TryHackMe-Pre_Security_Learning_Path.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
                                 <img src="imgs/certs/TryHackMe/TryHackMe-Complete_Beginner_Learning_Path.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
                             </div>
                         </div>
 
-                    </div>
-
-                    <br>
-                    
-                    <div class="row-grid">
-                        
                         <div class="col">
                             <div class="card h-100">
                                 <img src="imgs/certs/Fortinet/NSE1-NetworkSecurityAssociate.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card h-100">
                                 <img src="imgs/certs/Fortinet/NSE2-NetworkSecurityAssociate.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
                             </div>
                         </div>
 
                     </div>
-                    
-                    <div style="margin-top: 40px;">
-                        <center>
-                            <a href="./resume.html" class="btn btn-outline-secondary" title="Go Check Out My Resume">Detailed Skills</a>
-                        </center>
-                    </div>
-
                 </div>
 
             </div>
@@ -454,8 +423,10 @@
                 
                 <div class="client-responses-overview-inner" style="padding: 40px 0px;">
                     
-                    <div class="card-body">
-                        <h1 class="card-title" style="border-left: 6px solid #212529; padding-left: 18px; margin-bottom: 20px;" >Testimonials</h1>
+                    <div class="card-body-0">
+                        <h1 class="card-title" style="padding-bottom: 10px;">
+                            <span style="border-bottom: 4px solid; padding: 5px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; border-radius: 4px; ">Testimonials</span>                            
+                        </h1>
                         <p class="card-text">
                             I have helped few clients professionally and personally, and also alot of friends, below are the few responses i have received
                         </p>
@@ -490,7 +461,7 @@
                         
                         <div class="col-md-6">
                             
-                            <h2> <span style="border-right: 4px solid; padding: 5px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; border-radius: 4px; "> # Clients</span></h2>
+                            <h3> <span style="border-bottom: 4px solid; padding: 5px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; border-radius: 4px; "> # Clients</span></h3>
 
                             <div id="carousel-clients-review" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel" style="/*max-width: 600px;*/ height: 500px;">
                             
@@ -591,7 +562,7 @@
 
                         <div class="col-md-6">
                             
-                            <h2> <span style="border-right: 4px solid; padding: 5px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; border-radius: 4px; "> # Friends & Colleagues</span></h2>
+                            <h3> <span style="border-bottom: 4px solid; padding: 5px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; border-radius: 4px; "> # Friends & Colleagues</span></h3>
              
 
                             <div id="carousel-friends_colleague-review" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel" style="/*max-width: 600px;*/ height: 500px;">
@@ -599,7 +570,6 @@
                                 <div class="carousel-indicators">
                                     <button type="button" data-bs-target="#carousel-friends_colleague-review" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#carousel-friends_colleague-review" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carousel-friends_colleague-review" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                 </div>
     
                                 <div class="carousel-inner">
@@ -633,34 +603,11 @@
                                             <div class="card-header bg-dark text-white" style="position: absolute; left: -20px; top: 10px;">
                                                 #KuchToKartaHae
                                             </div>
-                                            <img src="imgs/profile-nobg.jpg" width="100px" height="100px" style="border-radius: 50%; position: absolute;left: 40%; top: -10%; object-fit: cover;" alt="">
-                                            <div class="card-body" style="margin-top: 50px;">
-                                                
-                                                <div class="card scroll-card" style="overflow-y: auto; height: 240px; margin: auto; box-shadow: none!important;;">
-                                                    <blockquote class="blockquote" style="margin-top: auto; margin-bottom: auto;" >
-                                                        <p>
-                                                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut alias, tenetur vero modi accusantium mollitia minima libero optio. Omnis cupiditate aliquid exercitationem quasi at aperiam, dignissimos nesciunt molestias consectetur perferendis!
-                                                        </p>
-                                                        <footer class="blockquote-footer mt-2">Ashish from <cite title="Source Title">Nowhere</cite></footer>
-                                                    </blockquote>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-    
-                                    </div>
-
-                                    <div class="carousel-item">
-                                    
-                                        <div class="card" style="height: 360px; margin-top: 60px;">
-                                            <div class="card-header bg-dark text-white" style="position: absolute; left: -20px; top: 10px;">
-                                                #KuchToKartaHae
-                                            </div>
                                             <img src="imgs/client_profiles/Pankaj_Colg_Friend_Profile.jpg" width="100px" height="100px" style="border-radius: 50%; position: absolute;left: 40%; top: -10%; object-fit: cover;" alt="">
                                             <div class="card-body" style="margin-top: 50px;">
                                                 
                                                 <div class="card scroll-card" style="overflow-y: auto; height: 240px; margin: auto; box-shadow: none!important;;">
-                                                    <blockquote class="blockquote" style="margin-top: auto; margin-bottom: auto;" >
+                                                    <blockquote class="blockquote" style="margin-top: auto; margin-bottom: auto;">
                                                         <p>
                                                             Ashish has a good knowledge for the Network Security and Programming Language. He has help me in the my Python Project. He can navigate and make legacy code maintainable. Spends too much time chasing new technology fads and maintains awareness of industry trends and tools.
                                                         </p>
@@ -708,10 +655,12 @@
                 
                 <div class="featured-projects-overview-inner" style="padding: 40px 0px;">
                     
-                    <div class="card-body">
-                        <h1 class="card-title" style="border-left: 6px solid #212529; padding-left: 18px; margin-bottom: 20px;" >Featured Projects</h1>
+                    <div class="-0">
+                        <h1 class="card-title" style="padding-bottom: 10px;">
+                            <span style="border-bottom: 4px solid; padding: 5px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; border-radius: 4px; ">Featured Projects</span>                            
+                        </h1>
                         <p class="card-text">
-                            I have created few projects, most projects are small projects which are in Python, NodeJS and Bash to Automate some Stuffs for clients or for some testing, below are few of my projects which i created. <br>
+                            I have created few projects, most projects are small projects which are in Python, NodeJS and Bash to Automate some Stuffs for clients or for some testing, below are few of my projects which i created.
                             I have created them to learn & explore something new, to help someone in their projects, App Plugin Developement etc.
                             And to explain Web Security Vulnerability using these Projects.
                         </p>
@@ -745,11 +694,11 @@
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                         
                         <div class="col">
-                            <div class="card f-p-card-1">
+                            <div class="card f-p-card-1 h-100">
                                 <img src="imgs/projects/mjassociates/2.png" class="card-img-top" data-img="imgs/projects/mjassociates/proj_mja_1.webp" style="height: 320px;">
                                 <div class="img-over-read-more d-flex flex-column" style="position: absolute; top: 10px; right: -100px; gap: 5px;">
                                     <a href="https://www.mjassociate.co.in/" target="_blank" class="btn btn-dark" title="Visit Project">Visit Site</a>
-                                    <a href="https://github.com/Asharry97/MJ_ASSOCIATE" target="_blank" class="btn btn-dark" title="Visit Project">Project Code</a>
+                                    <a href="https://github.com/aashishrbhandari/MJ_ASSOCIATE" target="_blank" class="btn btn-dark" title="Visit Project">Project Code</a>
                                 </div>
                                 <div class="" style="position: absolute; top: 20px; left: -6px;">
                                     <h3>
@@ -767,7 +716,7 @@
                         </div>
 
                         <div class="col">
-                            <div class="card f-p-card-2">
+                            <div class="card f-p-card-2 h-100">
                                 <img src="imgs/projects/oceanvw/php_reg_form/1_d.png" class="card-img-top" alt="imgs/projects/mjassociates/proj_mja_1.webp" style="height: 320px;">
                                 <div class="img-over-read-more d-flex flex-column" style="position: absolute; top: 10px; right: -100px; gap: 5px;">
                                     <a href="#" class="btn btn-dark" title="Visit Project">Visit Site</a>
@@ -786,53 +735,7 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <!--
-                        <div class="col">
-                            <div class="card f-p-card-1">
-                                <img src="imgs/projects/mjassociates/2.png" class="card-img-top" data-img="imgs/projects/mjassociates/proj_mja_1.webp" style="height: 320px;">
-                                <div class="img-over-read-more d-flex flex-column" style="position: absolute; top: 10px; right: -100px; gap: 5px;">
-                                    <a href="https://www.mjassociate.co.in/" target="_blank" class="btn btn-dark" title="Visit Project">Visit Site</a>
-                                    <a href="https://github.com/Asharry97/MJ_ASSOCIATE" target="_blank" class="btn btn-dark" title="Visit Project">Project Code</a>
-                                </div>
-                                <div class="" style="position: absolute; top: 20px; left: -6px;">
-                                    <h3>
-                                        <span class="badge bg-dark" style="border-radius: 0; border-bottom-right-radius: 20px; border-top-right-radius: 20px;">Commercial</span> 
-                                    </h3>                                    
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">MJ & Associates</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">TechEnd Handling</h6>
-                                    <p class="card-text">
-                                        I have helped them in building the Website, domain & email management etc, i handle the Techend part of the MJ & Associates, i help them maintain their website.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card f-p-card-2">
-                                <img src="imgs/projects/oceanvw/php_reg_form/1_d.png" class="card-img-top" alt="imgs/projects/mjassociates/proj_mja_1.webp" style="height: 320px;">
-                                <div class="img-over-read-more d-flex flex-column" style="position: absolute; top: 10px; right: -100px; gap: 5px;">
-                                    <a href="#" class="btn btn-dark" title="Visit Project">Visit Site</a>
-                                    <a href="#" class="btn btn-dark" title="Visit Project">Project Code</a>
-                                </div>
-                                <div class="" style="position: absolute; top: 20px; left: -6px;">
-                                    <h3>
-                                        <span class="badge bg-dark" style="border-radius: 0; border-bottom-right-radius: 20px; border-top-right-radius: 20px;">Commercial</span> 
-                                    </h3>                                    
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">OceanVW</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">TechEnd Handling</h6>
-                                    <p class="card-text">
-                                        I have helped them by building few attachable modules like the Registration form, Backend Configuration & Setup.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        -->
+                        </div>                   
                     
                     </div>
 
@@ -857,21 +760,28 @@
                     
                     <div class="card-body">
                         <div style="margin-bottom: 20px;">
-                            <h3 class="card-title b-l">Some Great Organizations i have worked with or worked for</h3>
-                            <h5 class="card-title mb-2 text-muted" >I have worked with below Organizations and loved what i did for them</h5>
+                            <h1 class="card-title" style="padding-bottom: 10px;">
+                                <span style="border-bottom: 4px solid; padding: 5px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; border-radius: 4px; ">Projects</span>                            
+                            </h1>
+                            <p class="card-text">
+                                I have worked with below Organizations and loved what i did for them
+                            </p>
                         </div>
-                        <div class="d-flex flex-wrap client-logo-imgs" style="gap: 1rem;">
-                            <div class="bg-dark" style="">
+                        <div class="client-logo-imgs" style="gap: 1rem;">
+                            <div class="bg-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="SafeSquid Labs">
                                 <img src="imgs/clients/safesquid-main-logo.png" alt="">
                             </div>
-                            <div class="bg-dark" style="">
+                            <div class="bg-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Ekids India">
                                 <img src="imgs/clients/ekids-india-main-logo2.jpg" alt="">
                             </div>
-                            <div class="bg-dark" style="">
+                            <div class="bg-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="OceanVW">
                                 <img src="imgs/clients/oceanvw-main-logo.png" alt="">
                             </div>
-                            <div class="bg-dark" style="">
+                            <div class="bg-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="MJ & Associates">
                                 <img src="imgs/projects/mjassociates/company_logo.png" alt="">
+                            </div>
+                            <div class="bg-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="The Planner Next Door">
+                                <img src="imgs/projects/theplannernextdoor/logo.png" alt="">
                             </div>
                         </div>
                     </div>
