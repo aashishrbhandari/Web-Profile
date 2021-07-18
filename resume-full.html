@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume: Ashish R Bhandari</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="imgs/svg/logo1.svg"/>
+
+    <!-- BSv5 Beta 2 CSS -->
+    <link rel="stylesheet" href="css/bootstrap.v5-beta2.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Fonts: Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    
+    <!-- BSv5 Beta 2 JS -->
+    <script src="js/bootstrap.v5-beta2.bundle.min.js"></script>
+
+    <script src="js/index.js" defer></script>
+
+    <style>
+
+        .work-exp-content::before {
+            content: "";
+            display: inline-block;
+            width: 3px;
+            height: 100%;
+            background: #c8cfd8;
+            left: 6px;
+            top: 4px;
+            position: absolute;
+        }
+
+        .work-exp-item {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .work-exp-item::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: -24px;
+            top: 3px;
+            width: 15px;
+            height: 15px;
+            border: 4px solid #6f8098;
+            background: white;
+            border-radius: 50%;
+        }
+        
+        .info-contact {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-contact li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .info-contact li a:hover {
+            border-bottom: 2px solid white;
+        }
+
+        .profile-content {
+            display: flex;
+            /*flex-wrap: wrap;*/
+        }
+
+        @media (max-width: 540px) {
+            .profile-content {
+                flex-direction: column;
+                align-items: center;         
+                justify-content: center;
+            }
+            .profile-img img {
+                margin-top: 40px;
+                width: 125px!important;
+                height: 125px!important;
+                border-radius: 50%;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <main style="margin-top: 0">
+
+        <div class="resume-holder">
+            <div class="container-fluid" style=" max-width: 1200px!important; padding: 0.4rem;">
+
+                <div class="resume-holder-inner" style="margin-top: 20px; background: #fff;">
+
+                    <div class="resume-card">
+
+                        
+
+                    </div>
+                   
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script defer>
+
+        /*** Comments:  */
+        function thisFilePath() {
+            let currhref = window.location.href;
+            let filePath = currhref.substring(0, currhref.lastIndexOf("/"));
+            return filePath;
+        }
+
+        // Get Resume Card
+        async function loadResumeCard() {
+            let _thisLoc = thisFilePath();
+            document.querySelector(".resume-card").innerHTML = await (await fetch(_thisLoc + '/resume-card.html')).text();
+        }
+
+        function main() {
+            loadResumeCard();
+        }
+
+        main();
+
+    </script>
+
+</body>
+</html>

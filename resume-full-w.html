@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume: Ashish R Bhandari</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="imgs/svg/logo1.svg"/>
+
+    <!-- BSv5 Beta 2 CSS -->
+    <link rel="stylesheet" href="css/bootstrap.v5-beta2.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Fonts: Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    
+    <!-- BSv5 Beta 2 JS -->
+    <script src="js/bootstrap.v5-beta2.bundle.min.js"></script>
+
+    <script src="js/index.js" defer></script>
+
+    <style>
+
+
+    </style>
+
+</head>
+<body>
+    
+    <main style="margin-top: 0">
+
+        <div class="resume-holder">
+            <div class="container-fluid" style="padding: 0.4rem;">
+
+                <div class="resume-holder-inner" style="background: #fff;">
+
+                    <div class="resume-card">
+
+                        
+
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+
+    <script defer>
+
+        /*** Comments:  */
+        function thisFilePath() {
+            let currhref = window.location.href;
+            let filePath = currhref.substring(0, currhref.lastIndexOf("/"));
+            return filePath;
+        }
+
+        // Get Resume Card
+        async function loadResumeCard() {
+            let _thisLoc = thisFilePath();
+            document.querySelector(".resume-card").innerHTML = await (await fetch(_thisLoc + '/resume-card.html')).text();
+        }
+
+        function main() {
+            loadResumeCard();
+        }
+
+        main();
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web PortFolio: Ashish R Bhandari</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="imgs/svg/logo1.svg"/>
+
+    <!-- BSv5 Beta 2 CSS -->
+    <link rel="stylesheet" href="css/bootstrap.v5-beta2.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Fonts: Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    
+    <!-- BSv5 Beta 2 JS -->
+    <script src="js/bootstrap.v5-beta2.bundle.min.js"></script>
+
+    <script src="js/index.js" defer></script>
+
+    <style>
+        .client-logo-imgs {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .client-logo-imgs div {
+            border-radius: 10px;
+        }
+
+        .client-logo-imgs img {
+            width: 180px;
+            height: 60px;
+            object-fit: contain;
+            filter: grayscale(1);
+            transition: all 0.6s ease;
+        }
+
+        .client-logo-imgs img:hover {
+            filter: grayscale(0);
+            transform: scale(0.92);
+        }
+
+        .socio-links {
+            margin-bottom: 0.4rem;
+        }
+
+        @media (max-width: 540px) {
+            .socio-links li a {
+                padding: 0;
+                padding-right: 0.7rem;
+                padding-bottom: 1rem;
+                padding-top: 1rem;
+            }
+         
+            .client-responses-content-inner blockquote {
+                font-size: 1rem;
+            }
+        }
+        
+        /***  Review Fields Data Padding ***/
+        .scroll-card::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background-color: #F5F5F5;
+        }
+
+        .scroll-card::-webkit-scrollbar {
+            width: 6px;
+            background-color: #F5F5F5;
+        }
+
+        .scroll-card::-webkit-scrollbar-thumb {
+	        background-color: #000000;
+        }
+
+        
+        .scroll-card {
+            padding: 10px;
+        }
+        /**** ***/
+
+        /** Features ***/
+
+        .featured-projects-content-inner .f-p-card-1 img:hover {
+            content: url(imgs/projects/mjassociates/proj_mja_1.webp);
+        }
+
+        .featured-projects-content-inner .f-p-card-2 img:hover {
+            content: url(imgs/projects/oceanvw/dash_1.webp);
+        }
+        
+        .featured-projects-content-inner .card {
+            border-right: 4px solid;
+        }
+        
+        .featured-projects-content-inner .card {
+            overflow: hidden;
+        }
+
+        .featured-projects-content-inner .card img {
+            max-height: 320px;
+            object-fit: contain;
+            transition: opacity 0.6s ease, opacity 0.6s ease;
+        }
+
+        .featured-projects-content-inner .card:hover .img-over-read-more {
+            opacity: 1;
+            right: 10px!important;
+        }
+
+        /*
+        .featured-projects-content-inner .card:hover img {
+            opacity: 0.5;
+        }
+*/
+
+        .client-responses-content-inner .row {
+            --bs-gutter-x: 4rem;
+        }
+
+        /*** GRID-To-Flex Switcher CSS  [A Small Quick Plug] **/
+
+        .switcher-css { 
+            transition: left 0.5s ease;
+        }
+        .switcher-css:hover {
+            left: 4px!important;
+        }
+
+        /*** Switcher Ends **/
+
+    </style>
+
+</head>
+<body>
+    
+    <header class="navbar-component">
+
+        
+
+    </header>
+
+    <main>
+
+        <!-- Intro Content -->
+        <div class="intro-content" style="background-color: #212529!important;">
+            <div class="container">
+                
+                <div class="intro-content-inner" style="padding: 40px 0px;">
+                    
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <!-- <img src="imgs/profile.jpg" width=100% height=100% style="object-fit: contain; border-radius: 8%;" alt="..."> -->
+                                <img src="imgs/profile.jpg" width=100% height=100% style="object-fit: contain; border-top-left-radius: 60px; border-bottom-right-radius: 60px;" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-white">
+                                    Hello, My Name is
+                                    <h1 class="card-title">Ashish R Bhandari</h1>
+                                    <p class="card-text">
+                                        I am a Security Engineer, who loves to explore Softwares from different angles (Security, Frontend, Backend), I keep on improving my skills by reading, researching and developing (small projects), i try to learn the concepts in a way that i can EXPLAIN it to others. This helps me to increase my Knowledge & Experience.
+                                    </p>
+                                    <p>
+                                        <span class="d-badge d-b-b-4">#Troubleshooter</span>
+                                        <span class="d-badge d-b-b-4">#Application Secuiry Engineer</span>
+                                        <span class="d-badge d-b-b-4">#Teacher</span>
+                                        <span class="d-badge d-b-b-4">#Learner</span>
+                                    </p>
+                                </div>
+                                <div class="card-footer d-flex gap-4">
+                                    <button class="btn btn-outline-light hire-me" data-bs-toggle="modal" data-bs-target="#show-info">Hire Me</button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <!-- Intro Content Ends -->
+
+        <!-- Skills OverView -->
+        <div class="skills-overview">
+            <div class="container">
+                
+                <div class="skills-overview-inner" style="padding: 40px 0px;">
+                    
+                    <div class="card-body">
+                        <h1 class="card-title" style="border-left: 6px solid #212529; padding-left: 18px; margin-bottom: 20px;" >Skills OverView</h1>
+                        <p class="card-text">
+                            My Skills includes Security Testing, Backend & Frontend, I try exploring softwares and understand how they are created as this helps me keep on thinking and understanding new approaches and learn it by exploring my way. I do not call myself a expert in Frontend or backend Domain, But i am aware about Technologies used, how they work, where they are used, why are they so popular and should be able to work with it.This website is created by me from scratch using bootstrapv5.<br />
+                            My Most Important Skill is to understand and troubleshoot problems.
+                        </p>
+                        <a href="./resume.html" class="btn btn-outline-secondary" title="Go Check Out My Resume">Read More About Me</a>
+                        <a href="https://github.com/Asharry97" target="_blank" class="btn btn-secondary" title="For More Explore My GitHub">Explore</a>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <!-- Skills OverView Ends -->
+
+
+        <!-- Tech Skills Content -->
+        <div class="skills-table-content" style="position: relative;">
+            <div class="container">
+
+                <div class="skills-table-content-inner" style="padding: 40px 0px;">
+
+                    <div class="row-grid">
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="imgs/svg/security2.svg" class="card-img-top" alt="Security" width=80 height=80 style="object-fit: contain; margin: 8px; margin-top: -40px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Security</h4>
+                                    <h6 class="card-subtitle mb-2 text-muted"> 
+                                        <span class="badge bg-white text-dark" style="border: 1px solid; border-left: 6px solid black">Web App Sec</span> 
+                                    </h6>
+                                    <p class="card-text">I have been Working as Security Engineer @ 
+                                        <a href="https://safesquid.com/" target="_blank" alt="Go To SafeSquid Labs Website" title="Go To SafeSquid Labs Website">SafeSquid Labs</a>  
+                                        which provides Secure Web Gateway Solution. <br>
+                                        I handle the Tripe T part i.e #Testing, #Troubleshooting & #Training.
+                                    </p>
+                                    <p class="card-text">My Work includes: #Product Testing (Software & Security),  #Handle Product Demos, #Product Installation & Setup, #Client Policy Creation.
+                                        <a href="./resume.html" class="" title="Go Check Out My Resume">More About Me</a> 
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <span class="badge bg-secondary">Web Testing</span> 
+                                        <span class="badge bg-secondary">Product Software & Security Testing</span>  
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="badge bg-secondary">Proxy</span> 
+                                        <span class="badge bg-secondary">Networking</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="badge bg-secondary">Secure Web Gateway</span> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="imgs/svg/frontend.svg" class="card-img-top" alt="Frontend" width=80 height=80 style="object-fit: contain; margin: 8px; margin-top: -40px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Web Dev</h4>
+                                    <h6 class="card-subtitle mb-2 text-muted"> 
+                                        <span class="badge bg-white text-dark" style="border: 1px solid; border-left: 6px solid black">Fronend + Backend</span> 
+                                    </h6>
+                                    <p class="card-text">
+                                        I keep Exploring things from both Frontend & Backend, to understand how the Application works, how it retrieves resources, which framework or library was used to develop it.
+                                    </p>
+                                    <p class="card-text">
+                                        I am comfortable with Linux OS and mostly work with them. I install, configure & troubleshoot softwares on Linux.
+                                        I have developed projects in Python,NodeJS,Bash Scripts etc.
+                                        <a href="./resume.html" class="" title="Go Check Out My Resume">More About Me</a>
+                                    </p>
+                                    
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <span class="badge bg-secondary">HTML</span> 
+                                        <span class="badge bg-secondary">CSS</span> 
+                                        <span class="badge bg-secondary">JS</span>
+                                    </li>
+                                    <li class="list-group-item"><span class="badge bg-secondary">Python</span> <span class="badge bg-secondary">Bash</span> <span class="badge bg-secondary">NodeJS</span> <span class="badge bg-secondary">Java</span></li>
+                                    <li class="list-group-item"><span class="badge bg-secondary">Linux</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="imgs/svg/softskills.svg" class="card-img-top" alt="Soft Skills" width=80 height=80 style="object-fit: contain; margin: 8px; margin-top: -40px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Soft Skills</h4>
+                                    <h6 class="card-subtitle mb-2 text-muted"> 
+                                        <span class="badge bg-white text-dark" style="border: 1px solid; border-left: 6px solid black">Explorer</span> 
+                                    </h6>
+                                    <p class="card-text">
+                                        I have been helping customers to setup security restrictions, troubleshoot & debug problems, provide them with solution explanation and i love doing this.
+                                        I have been helping friends & colleagues in developement, helping them understand concepts & debug their problems.
+                                    </p>
+                                    <p class="card-text">
+                                        I love helping others on stuff which i know or i am capable of doing.
+                                        <a href="./resume.html" class="" title="Go Check Out My Resume">More About Me</a>
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <span class="badge bg-secondary">Troubleshooter</span> 
+                                        <span class="badge bg-secondary">Helper</span>  
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="badge bg-secondary">Quick Learner</span> 
+                                        <span class="badge bg-secondary">Networking</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="badge bg-secondary">Good Observational Skills</span> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div style="margin-top: 40px;">
+                        <center>
+                            <a href="./resume.html" class="btn btn-outline-secondary" title="Go Check Out My Resume">Detailed Skills</a>
+                        </center>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Tech Skills Content Ends -->
+
+        <!-- Client Responses OverView -->
+        <div class="client-responses-overview">
+            <div class="container">
+                
+                <div class="client-responses-overview-inner" style="padding: 40px 0px;">
+                    
+                    <div class="card-body">
+                        <h1 class="card-title" style="border-left: 6px solid #212529; padding-left: 18px; margin-bottom: 20px;" >Testimonials</h1>
+                        <p class="card-text">
+                            I have helped few clients professionally and personally, and also alot of friends, below are the few responses i have received
+                        </p>
+                        <div class="d-flex flex-wrap" style="column-gap: 4px;">
+                            <h6 class="card-subtitle mb-2 text-muted"> 
+                                <span class="badge bg-white text-dark" style="border: 1px solid; border-bottom: 6px solid black">#Helper</span> 
+                            </h6>
+
+                            <h6 class="card-subtitle mb-2 text-muted"> 
+                                <span class="badge bg-white text-dark" style="border: 1px solid; border-bottom: 6px solid black">#Supporter</span> 
+                            </h6>
+
+                            <h6 class="card-subtitle mb-2 text-muted"> 
+                                <span class="badge bg-white text-dark" style="border: 1px solid; border-bottom: 6px solid black">#Good Teacher</span> 
+                            </h6>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <!-- Client Responses OverView Ends -->  
+
+        <!-- Client Responses -->
+        <div class="client-responses-content">
+            <div class="container">
+                
+                <div class="client-responses-content-inner" style="padding: 40px 0px;">
+
+                    <div class="row">
+                        
+                        <div class="col-md-6">
+                            
+                            <h2> <span style="border-right: 4px solid; padding: 5px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; border-radius: 4px; "> # Clients</span></h2>
+
+                            <div id="carousel-clients-review" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel" style="/*max-width: 600px;*/ height: 500px;">
+                            
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-clients-review" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carousel-clients-review" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carousel-clients-review" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+    
+                                <div class="carousel-inner">
+                                    
+                                    <div class="carousel-item active">
+                                        
+                                            <div class="card" style="height: 360px; margin-top: 60px;">
+                                                <div class="card-header bg-dark text-white" style="position: absolute; left: -20px; top: 10px;">
+                                                    #Passionate
+                                                </div>
+                                                <img src="imgs/client_profiles/Adv.Jay_Lathigara_Friend_Profile.jpg" width="100px" height="100px" style="border-radius: 50%; position: absolute;left: 40%; top: -10%; object-fit: cover;" alt="">
+                                                <div class="card-body" style="margin-top: 50px;">
+                                                    
+                                                    <div class="card scroll-card" style="overflow-y: auto; height: 240px; margin: auto; box-shadow: none!important;;">
+                                                        <blockquote class="blockquote" style="margin-top: auto; margin-bottom: auto;" >
+                                                            <p>
+                                                                “I think the website is GREAT! It is easy to follow along and definitely convienent because you can pull the information up whenever you need to“. <br>
+                                                                Ashish is a true entrepreneur. He’s passionate about helping companies find, build and grow their next big idea.
+                                                            </p>
+                                                            <footer class="blockquote-footer mt-2">Adv. Jay Lathigara from <cite title="Source Title">MJ & Associates</cite></footer>
+                                                        </blockquote>
+                                                    </div>
+    
+                                                </div>
+                                            </div>
+                                    
+                                    </div>
+    
+                                    <div class="carousel-item">
+                                        
+                                        <div class="card" style="height: 360px; margin-top: 60px;">
+                                            <div class="card-header bg-dark text-white" style="position: absolute; left: -20px; top: 10px;">
+                                                #Helper
+                                            </div>
+                                            <img src="imgs/client_profiles/Pradip_Friend_Profile.jpg" width="100px" height="100px" style="border-radius: 50%; position: absolute;left: 40%; top: -10%; object-fit: cover;" alt="">
+                                            <div class="card-body" style="margin-top: 50px;">
+                                                
+                                                <div class="card scroll-card" style="overflow-y: auto; height: 240px; margin: auto; box-shadow: none!important;;">
+                                                    <blockquote class="blockquote" style="margin-top: auto; margin-bottom: auto;" >
+                                                        <p>
+                                                            I have worked with many freelancers in the past but Ashish stands out from the rest. We hired him based on his current portfolio and we are happy that we choose him. He is so co-operative which you will not see in other free lancers. <br>
+                                                            Personally, i would like to recommend him to anyone looking for any kind of digital work - web development, SEO, digital marketing, branding or mobile app development services. Keep it up!!
+                                                        </p>
+                                                        <footer class="blockquote-footer mt-2">Pradip Yadav from <cite title="Source Title">Sales manager at Group Satellite</cite></footer>
+                                                    </blockquote>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+    
+                                    <div class="carousel-item">
+                                        
+                                        <div class="card" style="height: 360px; margin-top: 60px;">
+                                            <div class="card-header bg-dark text-white" style="position: absolute; left: -20px; top: 10px;">
+                                                #HardWorking
+                                            </div>
+                                            <img src="imgs/client_profiles/Adv.Prashant_B._Khadpe_Friend_Profile.jpg" width="100px" height="100px" style="border-radius: 50%; position: absolute;left: 40%; top: -10%; object-fit: cover;" alt="">
+                                            <div class="card-body" style="margin-top: 50px;">
+                                                
+                                                <div class="card scroll-card" style="overflow-y: auto; height: 240px; margin: auto; box-shadow: none!important;;">
+                                                    <blockquote class="blockquote" style="margin-top: auto; margin-bottom: auto;" >
+                                                        <p>
+                                                            Aashish has provided excellent website developement services and was responsive to all my questions and concern. So i would highly recommend Aashish to all other people's. Keep it up !!
+                                                        </p>
+                                                        <footer class="blockquote-footer mt-2">Adv. Prashant B. Khadpe from <cite title="Source Title">MJ & Associates</cite></footer>
+                                                    </blockquote>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                    
+                                </div>
+    
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-clients-review"  data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+    
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-clients-review"  data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+    
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            
+                            <h2> <span style="border-right: 4px solid; padding: 5px; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; border-radius: 4px; "> # Friends & Colleagues</span></h2>
+             
+
+                            <div id="carousel-friends_colleague-review" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel" style="/*max-width: 600px;*/ height: 500px;">
+                            
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-friends_colleague-review" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carousel-friends_colleague-review" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carousel-friends_colleague-review" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+    
+                                <div class="carousel-inner">
+                                    
+                                    <div class="carousel-item active">
+                                        
+                                        <div class="card" style="height: 360px; margin-top: 60px;">
+                                            <div class="card-header bg-dark text-white" style="position: absolute; left: -20px; top: 10px;">
+                                                #Tech-Versatile
+                                            </div>
+                                            <img src="imgs/client_profiles/Aakash_Friend_Profile.jpg" width="100px" height="100px" style="border-radius: 50%; position: absolute;left: 40%; top: -10%; object-fit: cover;" alt="">
+                                            <div class="card-body" style="margin-top: 50px;">
+                                                
+                                                <div class="card scroll-card" style="overflow-y: auto; height: 240px; margin: auto; box-shadow: none!important;;">
+                                                    <blockquote class="blockquote" style="margin-top: auto; margin-bottom: auto;" >
+                                                        <p>
+                                                            "Working and learning with ashish i came to know that he has a versatile capacity to dig deep and come up with a solution. He has a great  troubleshooting and debugging skill. You can inevitably rely upon him for your any kind of technical projects or freelancing work."
+                                                        </p>
+                                                        <footer class="blockquote-footer mt-2">Aakash from <cite title="Source Title">-----</cite></footer>
+                                                    </blockquote>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    
+                                    <div class="carousel-item">
+                                    
+                                        <div class="card" style="height: 360px; margin-top: 60px;">
+                                            <div class="card-header bg-dark text-white" style="position: absolute; left: -20px; top: 10px;">
+                                                #KuchToKartaHae
+                                            </div>
+                                            <img src="imgs/profile-nobg.jpg" width="100px" height="100px" style="border-radius: 50%; position: absolute;left: 40%; top: -10%; object-fit: cover;" alt="">
+                                            <div class="card-body" style="margin-top: 50px;">
+                                                
+                                                <div class="card scroll-card" style="overflow-y: auto; height: 240px; margin: auto; box-shadow: none!important;;">
+                                                    <blockquote class="blockquote" style="margin-top: auto; margin-bottom: auto;" >
+                                                        <p>
+                                                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut alias, tenetur vero modi accusantium mollitia minima libero optio. Omnis cupiditate aliquid exercitationem quasi at aperiam, dignissimos nesciunt molestias consectetur perferendis!
+                                                        </p>
+                                                        <footer class="blockquote-footer mt-2">Ashish from <cite title="Source Title">Nowhere</cite></footer>
+                                                    </blockquote>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+    
+                                    </div>
+
+                                    <div class="carousel-item">
+                                    
+                                        <div class="card" style="height: 360px; margin-top: 60px;">
+                                            <div class="card-header bg-dark text-white" style="position: absolute; left: -20px; top: 10px;">
+                                                #KuchToKartaHae
+                                            </div>
+                                            <img src="imgs/client_profiles/Pankaj_Colg_Friend_Profile.jpg" width="100px" height="100px" style="border-radius: 50%; position: absolute;left: 40%; top: -10%; object-fit: cover;" alt="">
+                                            <div class="card-body" style="margin-top: 50px;">
+                                                
+                                                <div class="card scroll-card" style="overflow-y: auto; height: 240px; margin: auto; box-shadow: none!important;;">
+                                                    <blockquote class="blockquote" style="margin-top: auto; margin-bottom: auto;" >
+                                                        <p>
+                                                            Ashish has a good knowledge for the Network Security and Programming Language. He has help me in the my Python Project. He can navigate and make legacy code maintainable. Spends too much time chasing new technology fads and maintains awareness of industry trends and tools.
+                                                        </p>
+                                                        <footer class="blockquote-footer mt-2">Pankaj from <cite title="Source Title">Nowhere</cite></footer>
+                                                    </blockquote>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                    
+                                </div>
+    
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-friends_colleague-review"  data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+    
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-friends_colleague-review"  data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+    
+                            </div>
+
+
+                        </div>
+
+                    </div>    
+                        
+                
+                    
+                </div>
+
+            </div>
+        </div>
+        <!-- Client Responses Ends -->
+
+
+        <!-- Featured Projects OverView -->
+        <div class="featured-projects-overview">
+            <div class="container">
+                
+                <div class="featured-projects-overview-inner" style="padding: 40px 0px;">
+                    
+                    <div class="card-body">
+                        <h1 class="card-title" style="border-left: 6px solid #212529; padding-left: 18px; margin-bottom: 20px;" >Featured Projects</h1>
+                        <p class="card-text">
+                            I have created few projects, most projects are small projects which are in Python, NodeJS and Bash to Automate some Stuffs for clients or for some testing, below are few of my projects which i created. <br>
+                            I have created them to learn & explore something new, to help someone in their projects, App Plugin Developement etc.
+                            And to explain Web Security Vulnerability using these Projects.
+                        </p>
+                        <div class="d-flex flex-wrap" style="column-gap: 4px;">
+                            <h6 class="card-subtitle mb-2 text-muted"> 
+                                <span class="badge bg-white text-dark" style="border: 1px solid; border-bottom: 6px solid black">#Web App Sec Explaining</span> 
+                            </h6>
+
+                            <h6 class="card-subtitle mb-2 text-muted"> 
+                                <span class="badge bg-white text-dark" style="border: 1px solid; border-bottom: 6px solid black">#Small Projects</span> 
+                            </h6>
+
+                            <h6 class="card-subtitle mb-2 text-muted"> 
+                                <span class="badge bg-white text-dark" style="border: 1px solid; border-bottom: 6px solid black">#Learning</span> 
+                            </h6>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <!-- Featured Projects OverView Ends -->
+
+        <!-- Featured Projects Content -->
+        <div class="featured-projects-content">
+            <div class="container">
+
+                <div class="featured-projects-content-inner" style="padding: 40px 0px;">
+                    
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        
+                        <div class="col">
+                            <div class="card f-p-card-1">
+                                <img src="imgs/projects/mjassociates/2.png" class="card-img-top" data-img="imgs/projects/mjassociates/proj_mja_1.webp" style="height: 320px;">
+                                <div class="img-over-read-more d-flex flex-column" style="position: absolute; top: 10px; right: -100px; gap: 5px;">
+                                    <a href="https://www.mjassociate.co.in/" target="_blank" class="btn btn-dark" title="Visit Project">Visit Site</a>
+                                    <a href="https://github.com/Asharry97/MJ_ASSOCIATE" target="_blank" class="btn btn-dark" title="Visit Project">Project Code</a>
+                                </div>
+                                <div class="" style="position: absolute; top: 20px; left: -6px;">
+                                    <h3>
+                                        <span class="badge bg-dark" style="border-radius: 0; border-bottom-right-radius: 20px; border-top-right-radius: 20px;">Commercial</span> 
+                                    </h3>                                    
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">MJ & Associates</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">TechEnd Handling</h6>
+                                    <p class="card-text">
+                                        I have helped them in building the Website, domain & email management etc, i handle the Techend part of the MJ & Associates, i help them maintain their website.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card f-p-card-2">
+                                <img src="imgs/projects/oceanvw/php_reg_form/1_d.png" class="card-img-top" alt="imgs/projects/mjassociates/proj_mja_1.webp" style="height: 320px;">
+                                <div class="img-over-read-more d-flex flex-column" style="position: absolute; top: 10px; right: -100px; gap: 5px;">
+                                    <a href="#" class="btn btn-dark" title="Visit Project">Visit Site</a>
+                                    <a href="#" class="btn btn-dark" title="Visit Project">Project Code</a>
+                                </div>
+                                <div class="" style="position: absolute; top: 20px; left: -6px;">
+                                    <h3>
+                                        <span class="badge bg-dark" style="border-radius: 0; border-bottom-right-radius: 20px; border-top-right-radius: 20px;">Commercial</span> 
+                                    </h3>                                    
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">OceanVW</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">TechEnd Handling</h6>
+                                    <p class="card-text">
+                                        I have helped them by building few attachable modules like the Registration form, Backend Configuration & Setup.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="col">
+                            <div class="card f-p-card-1">
+                                <img src="imgs/projects/mjassociates/2.png" class="card-img-top" data-img="imgs/projects/mjassociates/proj_mja_1.webp" style="height: 320px;">
+                                <div class="img-over-read-more d-flex flex-column" style="position: absolute; top: 10px; right: -100px; gap: 5px;">
+                                    <a href="https://www.mjassociate.co.in/" target="_blank" class="btn btn-dark" title="Visit Project">Visit Site</a>
+                                    <a href="https://github.com/Asharry97/MJ_ASSOCIATE" target="_blank" class="btn btn-dark" title="Visit Project">Project Code</a>
+                                </div>
+                                <div class="" style="position: absolute; top: 20px; left: -6px;">
+                                    <h3>
+                                        <span class="badge bg-dark" style="border-radius: 0; border-bottom-right-radius: 20px; border-top-right-radius: 20px;">Commercial</span> 
+                                    </h3>                                    
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">MJ & Associates</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">TechEnd Handling</h6>
+                                    <p class="card-text">
+                                        I have helped them in building the Website, domain & email management etc, i handle the Techend part of the MJ & Associates, i help them maintain their website.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card f-p-card-2">
+                                <img src="imgs/projects/oceanvw/php_reg_form/1_d.png" class="card-img-top" alt="imgs/projects/mjassociates/proj_mja_1.webp" style="height: 320px;">
+                                <div class="img-over-read-more d-flex flex-column" style="position: absolute; top: 10px; right: -100px; gap: 5px;">
+                                    <a href="#" class="btn btn-dark" title="Visit Project">Visit Site</a>
+                                    <a href="#" class="btn btn-dark" title="Visit Project">Project Code</a>
+                                </div>
+                                <div class="" style="position: absolute; top: 20px; left: -6px;">
+                                    <h3>
+                                        <span class="badge bg-dark" style="border-radius: 0; border-bottom-right-radius: 20px; border-top-right-radius: 20px;">Commercial</span> 
+                                    </h3>                                    
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">OceanVW</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">TechEnd Handling</h6>
+                                    <p class="card-text">
+                                        I have helped them by building few attachable modules like the Registration form, Backend Configuration & Setup.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        -->
+                    
+                    </div>
+
+
+                    <div style="margin-top: 40px;">
+                        <center>
+                            <a href="#" class="btn btn-outline-secondary" title="Go Check Out My Resume" data-bs-toggle="modal" data-bs-target="#show-info" >Other Projects</a>
+                        </center>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <!-- Featured Projects Content Ends-->
+
+
+        
+        <!-- Client Logos OverView -->
+        <div class="client-logos-overview">
+            <div class="container">
+                
+                <div class="client-logos-overview-inner" style="padding: 40px 0px;">
+                    
+                    <div class="card-body">
+                        <div style="margin-bottom: 20px;">
+                            <h3 class="card-title b-l">Some Great Organizations i have worked with or worked for</h3>
+                            <h5 class="card-title mb-2 text-muted" >I have worked with below Organizations and loved what i did for them</h5>
+                        </div>
+                        <div class="d-flex flex-wrap client-logo-imgs" style="gap: 1rem;">
+                            <div class="bg-dark" style="">
+                                <img src="imgs/clients/safesquid-main-logo.png" alt="">
+                            </div>
+                            <div class="bg-dark" style="">
+                                <img src="imgs/clients/ekids-india-main-logo2.jpg" alt="">
+                            </div>
+                            <div class="bg-dark" style="">
+                                <img src="imgs/clients/oceanvw-main-logo.png" alt="">
+                            </div>
+                            <div class="bg-dark" style="">
+                                <img src="imgs/projects/mjassociates/company_logo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <!-- Client Logos OverView Ends -->  
+
+
+    </main>
+
+    <footer class="footer-component">
+        
+    </footer>
+
+
+    <script defer>
+        
+
+
+        /* To Be Implemented Later
+        var exampleModal = document.getElementById('show-info');
+        exampleModal.addEventListener('show.bs.modal', function (event) {
+            // Button that triggered the modal
+            var button = event.relatedTarget
+            // Extract info from data-bs-* attributes
+            var recipient = button.getAttribute('data-bs-whatever')
+            // If necessary, you could initiate an AJAX request here
+            // and then do the updating in a callback.
+            //
+            // Update the modal's content.
+            var modalTitle = exampleModal.querySelector('.modal-title')
+            var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+            modalTitle.textContent = 'New message to ' + recipient
+            modalBodyInput.value = recipient
+        })*/
+
+    </script>
+
+</body>
+</html>

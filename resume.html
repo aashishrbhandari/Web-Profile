@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume: Ashish R Bhandari</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="imgs/svg/logo1.svg"/>
+
+    <!-- BSv5 Beta 2 CSS -->
+    <link rel="stylesheet" href="css/bootstrap.v5-beta2.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Fonts: Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    
+    <!-- BSv5 Beta 2 JS -->
+    <script src="js/bootstrap.v5-beta2.bundle.min.js"></script>
+
+    <!-- Testing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
+    <script src="js/index.js" defer></script>
+
+    <style>
+        .btn-float-color {
+            background: linear-gradient(to left, white 50%, black 50%) right;
+            background-size: 200%;
+            transition: .5s ease-out;
+        }
+
+        .btn-float-color:hover {
+            background-position: left;
+            color: #fff;
+        }
+
+        .btn-float-color img {
+            transition: .5s ease-out;
+        }
+
+        .btn-float-color:hover img {
+            content: url(./imgs/svg/download_white1.svg);
+        }
+
+        .sidebar-index {
+            position: fixed;
+            margin-top: 20px;
+            left: 10px;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+            transition: all 0.5s;
+        }
+
+        .sidebar-index a {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .index-show-hide {
+            transition: width 0.5s;
+            overflow: hidden;
+        }
+
+        .index-show-hide.small {
+            width: 60px;
+        }
+
+        .show-hide-index {
+            border-radius: 50%; 
+            position: absolute; 
+            right: -18px; 
+            bottom: 40%; 
+            padding: 0; 
+            background-color: #f9f9f9; 
+            border: 2px solid; 
+            text-decoration: none;
+        }
+
+        .profile-index-page {
+            display: none;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <header class="navbar-component">
+
+    </header>
+
+    <main>
+
+        <!-- Intro Content -->
+        <div class="intro-content" style="background-color: #212529!important; height: 300px;">
+            <div class="container" style="max-width: 1200px!important; padding: 0.4rem;">
+                
+                <div class="intro-content-inner" style="padding: 40px 0px;">
+
+                    <div class="card">
+                        <div class="" style="position: absolute; top: 0px; right: 0px;">
+                            <a href="#show-freelance" class="btn btn-secondary show-freelance" style="color: #fff;">
+                                <img src="./imgs/svg/lock1.svg" alt="">
+                                More
+                                <img src="./imgs/svg/skill-gear1.svg" width="20" height="20" alt="">
+                            </a>
+
+                            <a href="./data/Ashish_R_Bhandari_Resume.pdf" target="_blank" class="btn btn-light btn-float-color">
+                                <img src="./imgs/svg/download1.svg" alt="">
+                                Resume
+                            </a>
+
+                            <a href="./data/Ashish_R_Bhandari_Resume_Full.pdf" target="_blank" class="btn btn-outline-light">
+                                <img src="./imgs/svg/download_white1.svg" alt="">
+                                Full Resume
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Intro Content Ends -->
+
+        <!-- Profile Index Section [To Work On ]-->
+        <div class="profile-index-page sidebar-index" style="position: fixed; z-index: 2; border: none">
+            <!--
+            <a href="#" class="show-hide-index btn btn-light shadow">
+                <img src="imgs/svg/right-arrow-d2.svg" width="32" height="32" alt="">
+            </a>
+            -->
+
+            <ul class="list-group index-show-hide" style="border: none;">
+                <a href="#basic-resume-card" class="list-group-item list-group-item-action fw-bold d-flex">
+                    <img src="imgs/svg/resume_man.svg" height="32" width="32" alt="">
+                    Resume
+                </a>
+                <a href="#show-freelance" class="list-group-item list-group-item-action fw-bold">
+                    <img src="imgs/svg/freelancer_type.svg" height="32" width="32" alt="">
+                    Freelancer Profile
+                </a>
+                <a href="#show-personal" class="list-group-item list-group-item-action fw-bold">
+                    <img src="imgs/svg/projects_do1.svg" height="32" width="32" alt="">
+                    Personal Projects
+                </a>
+                <a href="#show-certs" class="list-group-item list-group-item-action fw-bold">
+                    <img src="imgs/svg/certify_me.svg" height="32" width="32" alt="">
+                    Certificates
+                </a>
+            </ul>
+        </div>
+
+        <div class="resume-holder">
+            <div class="container-fluid" style="max-width: 1200px!important; padding: 0.4rem;">
+
+                <div class="resume-holder-inner" style="margin-top: -180px; background: #fff;">
+
+                    <div class="resume-card">
+
+                        
+
+                    </div>
+                   
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer-component">
+        
+    </footer>
+    <script defer>
+
+        /*** Comments:  */
+        function thisFilePath() {
+            let currhref = window.location.href;
+            let filePath = currhref.substring(0, currhref.lastIndexOf("/"));
+            return filePath;
+        }
+
+        // Get Resume Card
+        async function loadResumeCard() {
+            let _thisLoc = thisFilePath();
+            document.querySelector(".resume-card").innerHTML = await (await fetch(_thisLoc + '/resume-card.html')).text();
+        }
+
+        function showFreelance() {
+
+            let showFreelanceDiv = document.querySelector("#show-freelance");
+            let showPersonalDiv = document.querySelector("#show-personal");
+            let lockImg = document.querySelector(".show-freelance img");
+
+            console.log("showFreelanceDiv.style.display : ", showFreelanceDiv.style.display );
+
+            if (showFreelanceDiv.style.display === "none" || showFreelanceDiv.style.display === "") {
+                showFreelanceDiv.style.display = "block";
+                showPersonalDiv.style.display = "block";
+                lockImg.src = "./imgs/svg/unlock1.svg";
+            } else {
+                showFreelanceDiv.style.display = "none";
+                showPersonalDiv.style.display = "none";
+                lockImg.src = "./imgs/svg/lock1.svg";
+            }
+        }
+
+        function showProfileIndex() {
+
+            let profileIndex = document.querySelector(".profile-index-page");
+
+            let freelancer = document.querySelector("#show-freelance");
+            let personal = document.querySelector("#show-personal");
+            let certs = document.querySelector("#show-certs");
+
+            let lockImg = document.querySelector(".show-freelance img");
+
+            console.log("profileIndex.style.display : ", profileIndex.style.display );
+
+            if (profileIndex.style.display === "none" || profileIndex.style.display === "") {
+                profileIndex.style.display = "block";
+
+                //freelancer.style.display = "block";
+                //personal.style.display = "block";
+                //certs.style.display = "block";
+
+                lockImg.src = "./imgs/svg/unlock1.svg";
+            } else {
+                profileIndex.style.display = "none";
+                lockImg.src = "./imgs/svg/lock1.svg";
+            }
+            
+        }
+
+        function main() {
+            loadResumeCard();
+            document.querySelector(".show-freelance").addEventListener('click', function() {
+                showFreelance();
+                //showProfileIndex();
+            });
+        }
+
+        main();
+
+    </script>
+</body>
+</html>
